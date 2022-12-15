@@ -23,6 +23,6 @@ platform :ios do
   desc "Runs all the tests"
   lane :test do
     scan(include_simulator_logs: false,
-	 suppress_xcode_output)
+	 suppress_xcode_output: true)
   end
 end
